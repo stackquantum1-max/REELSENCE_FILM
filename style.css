@@ -215,7 +215,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: center;
+  width: 100%;
+  text-align: center;
 }
 
 .hero-btn {
@@ -254,7 +255,7 @@ header {
 /* Bottom 65% container with images */
 .hero-bottom {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 60%;
   gap: 10px;
   position: relative;
@@ -270,14 +271,14 @@ header {
 }
 
 .hero-bottom img:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   filter: brightness(1.1);
 }
 
 .img1 { flex: 0 0 20%; }
-.img2 { flex: 0 0 12%; }
-.img3 { flex: 0 0 25%; }
-.img4 { flex: 0 0 15%; }
+.img2 { flex: 0 0 20%; }
+.img3 { flex: 0 0 20%; }
+.img4 { flex: 0 0 20%; }
 .img5 { flex: 0 0 20%; }
 
 /* DROPDOWN ANIMATION */
