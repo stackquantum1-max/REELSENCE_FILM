@@ -60,6 +60,7 @@ header {
 .logo-icon {
   width: 40px;
   height: 40px;
+  margin-top: 5px;
 }
 
 /* CENTER NAV LINKS */
@@ -264,7 +265,7 @@ header {
 
 .hero-bottom img {
   object-fit: cover;
-  width: 100%;
+  width: 80%;
   height: 100%;
   border-radius: 15px;
   transition: 0.3s ease;
