@@ -1,4 +1,3 @@
-/* ======= NAVBAR BASE STYLING ======= */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #000;
   color: #fff;
-  overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 header {
@@ -179,7 +178,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.02; /* slightly darker overlay */
+  opacity: 0.09; /* slightly darker overlay */
   z-index: 0;
 }
 
