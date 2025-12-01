@@ -33,6 +33,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 20px;
 }
 
 /* LOGO */
@@ -40,19 +41,30 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  cursor: pointer;
+  padding: 3px 7px;
+  border: 2px solid #fff;
+  border-radius: 35px;
+  background: rgba(255, 255, 255);
+  backdrop-filter: blur(6px);
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #000;
 }
 
 .logo-icon {
   width: 40px;
   height: 40px;
 }
-
+/* 
 .logo-text {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 2px;
-}
+} */
 
 /* CENTER NAV LINKS */
 .nav-links {
@@ -66,8 +78,18 @@ header {
   text-decoration: none;
   font-size: 1rem;
   color: #ffffff;
-  opacity: 0.85;
-  transition: 0.3s ease;
+  opacity: 0.9;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.18);
+  color: #f7d774;
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 .nav-links a:hover {
