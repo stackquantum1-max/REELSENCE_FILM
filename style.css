@@ -154,6 +154,86 @@ header {
   font-size: 1.2rem;
 }
 
+.hero {
+width: 100%;
+height: 100vh;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+color: #fff;
+overflow-x: hidden;
+padding: 50px;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+
+/* Background image with dark overlay */
+.hero::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('https://via.placeholder.com/1920x1080'); /* replace with your image */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+opacity: 0.5; /* adjust transparency here */
+z-index: 0;
+}
+
+
+/* Top 30% container */
+.hero-top {
+display: flex;
+width: 100%;
+height: 30%;
+gap: 30px;
+position: relative;
+z-index: 1;
+}
+
+
+.hero-left {
+width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 20px;
+}
+
+
+.hero-title {
+font-family: 'Montserrat', sans-serif;
+font-size: 3rem;
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+
+.hero-buttons {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.hero-btn {
+padding: 12px 25px;
+border: 2px solid #fff;
+border-radius: 35px;
+font-size: 1rem;
+font-weight: 600;
+background: rgba(255,255,255,0.08);
+color: #fff;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+.img5 { flex: 0 0 25%; }
+
 /* DROPDOWN ANIMATION */
 @keyframes dropdown {
   from { opacity: 0; transform: translateY(-15px); }
@@ -173,4 +253,22 @@ header {
   .menu-toggle {
     display: flex;
   }
+}
+
+@media (max-width: 1200px) {
+.hero-top {
+flex-direction: column;
+height: auto;
+}
+.hero-left, .hero-right {
+width: 100%;
+}
+.hero-bottom {
+flex-direction: column;
+height: auto;
+}
+.hero-bottom img {
+width: 100%;
+height: auto;
+}
 }
