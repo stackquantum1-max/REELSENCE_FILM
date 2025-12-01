@@ -276,10 +276,10 @@ header {
   filter: brightness(1.1);
 }
 
-.img1 { flex: 0 0 20%; }
-.img2 { flex: 0 0 20%; }
-.img3 { flex: 0 0 20%; }
-.img4 { flex: 0 0 20%; }
+.img1 { flex: 0 0 25%; }
+.img2 { flex: 0 0 25%; }
+.img3 { flex: 0 0 25%; }
+.img4 { flex: 0 0 25%; }
 
 /* DROPDOWN ANIMATION */
 @keyframes dropdown {
