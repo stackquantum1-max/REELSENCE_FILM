@@ -331,7 +331,7 @@ header {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  color: #f7d774;
+  color: rgb(177, 150, 76);
 }
 
 .about-text p {
@@ -378,15 +378,5 @@ header {
   .hero-bottom img {
     width: 100%;
     height: auto;
-  }
-   .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-image, .about-text {
-    flex: 0 0 100%;
-  }
-  .about-image img {
-    margin-bottom: 25px;
   }
 }
