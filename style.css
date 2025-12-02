@@ -514,6 +514,115 @@ header {
   border: 1px solid rgba(255,255,255,0.3);
 }
 
+#testimonials {
+  width: 100%;
+  padding: 100px 5%;
+  background: #ffffff;
+  text-align: center;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.testimonials-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.testimonials-subtitle {
+  font-size: 1.1rem;
+  color: #6b6b6b;
+  margin-bottom: 45px;
+  letter-spacing: 1px;
+}
+
+.testimonial-slider {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  display: none;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 25px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 0 35px rgba(0,0,0,0.08);
+  transition: opacity .6s ease;
+}
+
+.testimonial-card.active {
+  display: block;
+  animation: fade .6s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: .3; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.testimonial-img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 4px solid rgba(177,150,76,0.7);
+}
+
+.testimonial-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.testimonial-role {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 18px;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: #222;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.testimonial-controls {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.control-btn {
+  padding: 10px 18px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: .3s;
+}
+
+.control-btn:hover {
+  transform: scale(1.1);
+  background: #B1964C;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .testimonials-title { font-size: 2.3rem; }
+  .testimonial-card { padding: 30px; }
+  .testimonial-text { font-size: 1rem; }
+}
 
 /* DROPDOWN ANIMATION */
 @keyframes dropdown {
