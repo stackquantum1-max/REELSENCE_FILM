@@ -379,4 +379,14 @@ header {
     width: 100%;
     height: auto;
   }
+   .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image, .about-text {
+    flex: 0 0 100%;
+  }
+  .about-image img {
+    margin-bottom: 25px;
+  }
 }
