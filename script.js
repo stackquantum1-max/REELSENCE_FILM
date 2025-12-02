@@ -1,7 +1,3 @@
-/* ==========================
-   QUERY SELECTORS
-========================== */
-
 // NAVBAR
 const navbar = document.querySelector('.navbar');
 const logoContainer = document.querySelector('[data-logo]');
@@ -111,6 +107,15 @@ heroBookSession.addEventListener('click', () => goToSection('#contact'));
 // SERVICES BUTTONS
 serviceBookNow.addEventListener('click', () => goToSection('#contact'));
 serviceExploreMore.addEventListener('click', () => goToSection('#hero'));
+
+const bookNowBtns = document.querySelectorAll('.book-btn, .service-btn');
+
+bookNowBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    goToSection('#contact');
+    closeMobileMenu(); // optional: close mobile menu if open
+  });
+});
 
 // TESTIMONIAL BUTTONS
 nextBtn.addEventListener('click', nextTestimonial);
