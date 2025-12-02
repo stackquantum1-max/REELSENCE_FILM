@@ -20,6 +20,7 @@ header {
 }
 
 .navbar {
+  position: fixed;
   width: 100%;
   padding: 20px 30px;
   display: flex;
@@ -27,6 +28,7 @@ header {
   justify-content: space-between;
   backdrop-filter: blur(2px);
   background: rgba(0, 0, 0, 0);
+  transition: top 0.6s ease;
 }
 
 .navbar-inner {
@@ -128,15 +130,19 @@ header {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 70px;
+  top: 82px;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(0, 0, 0, 0.09);
   padding: 20px;
-  backdrop-filter: blur(10px);
-  text-align: center;
+  backdrop-filter: blur(1px);
+  /* text-align: center; */
   animation: dropdown 0.4s ease;
   z-index: 999;
+}
+
+.mobile-menu.active {
+  display: block;
 }
 
 .mobile-menu ul {
