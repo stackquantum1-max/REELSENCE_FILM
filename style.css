@@ -162,7 +162,7 @@ header {
   justify-content: space-between;
   color: #000000;
   overflow-x: hidden;
-  padding: 120px 50px 40px 50px;
+  padding: 110px 50px 50px 50px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   border-radius: 0 0 35px 35px;
@@ -379,13 +379,19 @@ header {
   .hero-left, .hero-right {
     width: 100%;
   }
-  .hero-bottom {
-    flex-direction: column;
-    height: auto;
+ .hero-bottom {
+  flex-direction: column;
+  height: 50vh; /* limit total height on smaller screens */
   }
+
+  .hero-bottom > div {
+    height: 100%; /* each image container height */
+  }
+
   .hero-bottom img {
     width: 100%;
-    height: auto;
+    height: 700px;
+    object-fit: cover;
   }
    .about-container {
     flex-direction: column;
