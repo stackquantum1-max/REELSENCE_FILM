@@ -11,7 +11,6 @@ const heroViewPortfolio = document.querySelector('.hero-btn:nth-child(1)');
 const heroBookSession = document.querySelector('.hero-btn:nth-child(2)');
 
 // SERVICES BUTTONS
-const serviceBookNow = document.querySelector('.service-card button:nth-child(4)');
 const serviceViewPackages = document.querySelector('.service-card.featured button');
 const serviceExploreMore = document.querySelector('.service-card:last-child button');
 
@@ -19,6 +18,19 @@ const serviceExploreMore = document.querySelector('.service-card:last-child butt
 const testimonialCards = document.querySelectorAll('.testimonial-card');
 const nextBtn = document.querySelector('.testimonial-controls .next');
 const prevBtn = document.querySelector('.testimonial-controls .prev');
+
+// Scroll to section for any button with data-scroll-to
+const scrollButtons = document.querySelectorAll('[data-scroll-to]');
+
+scrollButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const sectionId = '#' + btn.getAttribute('data-scroll-to');
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
 
 // PORTFOLIO MODAL
 const imgModal = document.getElementById('imgModal');
@@ -105,17 +117,7 @@ heroViewPortfolio.addEventListener('click', () => goToSection('#portfolio'));
 heroBookSession.addEventListener('click', () => goToSection('#contact'));
 
 // SERVICES BUTTONS
-serviceBookNow.addEventListener('click', () => goToSection('#contact'));
 serviceExploreMore.addEventListener('click', () => goToSection('#hero'));
-
-const bookNowBtns = document.querySelectorAll('.book-btn, .service-btn');
-
-bookNowBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    goToSection('#contact');
-    closeMobileMenu(); // optional: close mobile menu if open
-  });
-});
 
 // TESTIMONIAL BUTTONS
 nextBtn.addEventListener('click', nextTestimonial);
